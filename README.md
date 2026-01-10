@@ -1,2 +1,2 @@
 # boulder
-A class for outputting font-family definitions
+Boulder is a PHP class for outputting font-family definitions.
