@@ -1,2 +1,2 @@
 # boulder
-A small class for outputting font-family definitions
+A class for outputting font-family definitions
