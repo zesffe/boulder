@@ -1,7 +1,7 @@
 
 @font-face {
 	font-family: 'GenzschEtHeyse';
-	src: url('GenzschEtHeyse.ttf') format('truetype');
+	src: url('/fonts/GenzschEtHeyse.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -100,7 +100,7 @@ h3 {
 
 
 code, pre{
-	font-family: IBMPlexMono;
+	font-family: IBMPlexMono, monospace;
 	background: #ddd;
 }
 
