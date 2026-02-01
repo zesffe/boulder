@@ -1,0 +1,163 @@
+
+@font-face {
+	font-family: 'GenzschEtHeyse';
+	src: url('GenzschEtHeyse.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IBMPlexMono';
+	src: url('fonts/IBMPlexMono-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IBMPlexSans';
+	src: url('fonts/IBMPlexSans-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IBMPlexSans';
+	src: url('fonts/IBMPlexSans-MediumItalic.otf') format('opentype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'IBMPlexSans';
+	src: url('fonts/IBMPlexSans-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IBMPlexSans';
+	src: url('fonts/IBMPlexSans-BoldItalic.otf') format('opentype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
+html, body{
+	height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	font-family: IBMPlexSans, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	background: #ccc;
+}
+
+header{
+	padding: 5rem 0 0;
+	display: flex;
+	gap: .5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+main{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	padding: 0 1rem;
+}
+
+footer{
+	width: 100%;
+	background: #333;
+	color: #ddd;
+	margin: 0;	
+}
+
+
+
+h1, h2 {
+	font-weight: normal;
+}
+
+h1, h3{
+	font-family: GenzschEtHeyse, serif;
+}
+
+h2 {
+	font-size: clamp(1em, 5vw, 2em);
+}
+
+h3 {
+	font-size: 100%;
+}
+
+
+
+code, pre{
+	font-family: IBMPlexMono;
+	background: #ddd;
+}
+
+code{
+	padding: 0 .1em;
+}
+
+pre{
+	margin: 0;
+	padding: .1em .2em;
+
+	max-width: 100%;
+	white-space: pre;
+	overflow-x: auto;
+}
+
+
+
+b, strong{
+	font-weight: 700;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+
+
+header h1, header h2{
+	margin: 0;
+	padding: 0;
+}
+
+header h1{
+	font-size: clamp(5rem, 10vw, 9rem);
+}
+
+
+
+footer > div{
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p{
+	font-size: 80%;
+}
+
+
+
+.content{
+	width: 100%;
+	max-width: fit-content;
+	min-width: 0;
+}
+
+

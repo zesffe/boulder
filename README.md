@@ -1,6 +1,6 @@
-# boulder
+# bolder
 
-**boulder** is a PHP class for outputting `@font-face` definitions.
+[**bolder**](https://zesffe.github.io/bolder) is a PHP class for outputting `@font-face` definitions.
 
 For example, a useful subset of PlexMono might be these seven weight-style combinations:
 
@@ -12,12 +12,12 @@ For example, a useful subset of PlexMono might be these seven weight-style combi
 1. _IBMPlexMono-MediumItalic.otf_
 1. _IBMPlexMono-Regular.otf_
 
-which can be passed to boulder:
+which can be passed to bolder:
 
 ```PHP
-require 'boulder.php';
+require 'bolder.php';
 
-$css = new boulder();
+$css = new bolder();
 
 $css->add([
 	'family' => 'IBMPlexMono',
@@ -109,3 +109,5 @@ In this example, the class outputs eight rules, but only seven reference an exis
 In other words, note that `BoldItalic` does not actually exist in the PlexMono family; a rule for `BoldItalic` is generated despite that `BoldItalic` is not part of the family. (The closest to a bold italic for PlexMono is `SemiboldItalic`.)
 
 Until the class accepts a parameter for such exceptions, nonsense rules like this should just be deleted from the exported CSS.
+
+
